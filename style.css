@@ -1,0 +1,27 @@
+.grid {
+  border: 2px #800080 solid;
+  width: 400px;
+  height: 500px;
+  display:grid;
+  grid-template:repeat(4, 1fr 2fr) /repeat(4, 3fr 2fr);
+  gap:20px 5px;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px #000080 solid;
+}
+
+.a{
+	grid-row: 5/span 2;
+	grid-columns: 1/span 2;
+}
+.b{
+	grid-area:5/ 1/ span 2/span 2;
+
+}
+.c{
+	grid-area:6/span 3/8/span 1;
+}

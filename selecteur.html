@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sélecteurs</title>
+	<style type="text/css">
+		article p:first-of-type {
+		  color: red;
+		  font-size: 1.5em;
+		}
+		a[href$=".pdf"]::before {
+		  content: "📄";
+		}
+		a[href$=".mp3"]::before {
+		  content: "🎧";
+		}
+		a[href$=".jpg"]::before,
+		a[href$=".png"]::before {
+		  content: "📷";
+		}
+		div p {
+		  color: seagreen;
+		}
+		div + p {
+		  background-color: lightgoldenrodyellow;
+		}
+		div > p {
+		  background-color: lightpink;
+		}
+		h2 ~ p {
+		  font-style:italic ;
+		}
+
+	</style>
+</head>
+<body>
+	<article>
+		<div>
+			<section>
+			  <p>Je veux être en rouge et plus grand que le reste du texte.</p>
+			  <p>Je veux être dans la taille et la couleur par défaut.</p>
+			</section>
+	  	</div>
+	</article>
+	<ul>
+        <li>
+          <a href="my-image.jpg">Une image</a>
+        </li>
+        <li>
+          <a href="my-document.pdf">Un document</a>
+        </li>
+        <li>
+          <a href="my-audio.mp3">Un audio</a>
+        </li>
+        <li>
+          <a href="my-image.png">Une autre image</a>
+        </li>
+    </ul>
+	<div>
+	  <h2>Un titre de niveau 2 enfant de div</h2>
+	  <p>Un paragraphe enfant de div.</p>
+	</div>
+	<h2>Un titre de niveau 2</h2>
+	<div>
+	  <span><p>un paragraphe descendant de div dans un span</p></span>
+	</div>
+
+	<p>Un paragraphe hors d'un div.</p>
+
+</body>
+</html>
