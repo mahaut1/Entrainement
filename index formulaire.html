@@ -1,0 +1,55 @@
+<form method="post">
+	<div>
+		<label>Prénoms:</label>
+			<input type="text" name="Prenom" list="prenoms" required>
+				<datalist id="prenoms">
+					<option value="Marie">
+					<option value="Chantal">
+					<option value="Martine">
+				</datalist>
+	</div>
+	<div>
+		<label>Mail:</label> 
+		<input type="email" name="mail" required>
+	</div>
+	<div>
+		<label>date:</label>
+		<input type="date" name="date" required>
+	</div>
+	<div>
+		<label>Password:</label>
+		<input type="password" name="mot_de_passe" minlength="1" maxlength="15">
+	</div>
+	<div>
+		<label>Bulletin de salaire:</label>
+		<input type="file" name="salaire" accept=".pdf" required>
+	</div>
+	
+	<div>
+		<label>Zone de texte:</label> 
+		<textarea name="écrivez du texte">
+		</textarea>
+	</div>
+	<div>
+		<label>A quel emploi postulez-vous?</label> 
+			<input type="checkbox" name="designer" id="mon_choix">
+			<label for="mon_choix">Designer Web</label>
+			<input type="checkbox" name="dev" id="choix 1">
+			<label for="choix 1">Développeur web</label>
+	</div>
+	<div>
+		<label>A quel emploi postulez-vous?</label> 
+			<input type="radio" name="unique" value="designer" id="designer">
+			<label for="designer">Designer Web</label>
+			<input type="radio" name="unique" value "dev" id="dev">
+			<label for="dev">Développeur web</label>
+	</div>
+	<div>
+		<label> Quelle succursale visez-vous? </label>
+			<select name="succursale">
+				<option value="nice">Nice</option>
+				<option value="Saintraphael">Saint-Raphael</option>
+			</select>
+		<input type="Submit" value="Validez">
+	</div>	
+</form>
